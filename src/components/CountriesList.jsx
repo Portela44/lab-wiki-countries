@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from 'react'
-import countriesJSON from "./../countries.json"
+// import React, {useEffect, useState} from 'react'
+// import countriesJSON from "./../countries.json"
 import {Link} from "react-router-dom"
 
-export default function CountriesList() {
-    const [countries, setCountries] = useState(countriesJSON);
+export default function CountriesList(props) {
+    const {countries} = props;
+    // const [countries, setCountries] = useState(countriesJSON);
     return (
         <div>
             <ul>
