@@ -21,7 +21,6 @@ export default function CountryDetails(props) {
                     const name = countriesJSON.find(object => object.alpha3Code === border).name.common;
                     return <Link key={border} to={`/${border}`}>{name} </Link>
                 })}
-
                 </h5>
             </div>
             )

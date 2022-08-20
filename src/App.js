@@ -15,7 +15,6 @@ function App() {
           "https://ih-countries-api.herokuapp.com/countries"
         ).then((response) => response.json());
         setCountries(response);
-        console.log(response);
       } catch (error) {
         console.log(error)
       }
@@ -35,7 +34,6 @@ function App() {
         </div>
       )
       }
-      
     </div>
   );
 }
